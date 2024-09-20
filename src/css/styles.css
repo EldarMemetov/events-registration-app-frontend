@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#events-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#events-list li:hover {
+  transform: scale(1.02);
+}
+
+#events-list button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#events-list button:hover {
+  background-color: #0056b3;
+}
+
+#events-list strong {
+  font-size: 18px;
+}
+
+#details p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+#details ul {
+  margin-top: 10px;
+}
+
+#registration-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+#registration-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+#registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#registration-form label {
+  margin: 10px 0 5px;
+}
+
+#registration-form input,
+#registration-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#registration-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+#registration-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#registration-form button:hover {
+  background-color: #218838;
+}
+
+#participants-list li,
+#details ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#close-modal-button:hover {
+  color: #c82333;
+}

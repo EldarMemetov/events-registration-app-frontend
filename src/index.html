@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>API Interaction</h1>
+
+    <h2>Events</h2>
+    <ul id="events-list"></ul>
+
+    <div id="registration-modal" style="display: none">
+      <h2>Register for Event</h2>
+      <span id="close-modal-button">&times;</span>
+      <form id="registration-form">
+        <input type="hidden" id="eventId" />
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" required />
+        <div id="message-box" style="display: none; margin-top: 20px"></div>
+        <label for="source">Where did you hear about this event?</label>
+        <div id="source">
+          <label
+            ><input type="checkbox" name="source" value="Social media" /> Social
+            media</label
+          >
+          <label
+            ><input type="checkbox" name="source" value="Friends" />
+            Friends</label
+          >
+          <label
+            ><input type="checkbox" name="source" value="Found myself" /> Found
+            myself</label
+          >
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
